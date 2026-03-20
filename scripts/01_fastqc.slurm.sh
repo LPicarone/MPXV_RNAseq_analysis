@@ -10,7 +10,7 @@
 module load profile/bioinf
 module load autoload fastqc/0.11.9
 
-########## VARIABLES (EDIT THESE) ##########
+########## VARIABLES ##########
 InputDir="data"
 OutputDir="results/FastQC_01"
 THREADS=4
@@ -18,5 +18,4 @@ THREADS=4
 
 mkdir -p "$OutputDir"
 
-# your original had "*fastqc.gz" but likely it's "*fastq.gz"
 fastqc -o "$OutputDir" -t "$THREADS" --nogroup "$InputDir"/*.fastq.gz
