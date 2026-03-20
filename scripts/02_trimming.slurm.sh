@@ -10,7 +10,7 @@
 module load profile/bioinf
 module load autoload trimmomatic/0.39
 
-########## VARIABLES (EDIT THESE) ##########
+########## VARIABLES ##########
 InputDir="data"
 OutputDir="results/Trimmed_02"
 THREADS=8
